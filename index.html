@@ -1,3 +1,4 @@
+/*
 <!DOCTYPE html>
 <html>
   <head>
@@ -100,5 +101,32 @@
         });
       });
     </script>
+  </body>
+</html>
+*/
+<!--  Robot control -->
+<!DOCTYPE>
+<html>
+  <body>
+  <center>
+   <br>
+  <form action="https://api.particle.io/v1/devices/d95704000ac7959765290424/Movement?access_token=9d6121ee98a7cd34b1331cf323a3eda357929bee" method="POST">
+    Tell your Robot what ro do!<br>
+    <br>
+    <input type="radio" name="args" value="f">forward
+    <br>
+    <input type="radio" name="args" value="G">Hard Left
+    <input type="radio" name="args" value="g">Left
+    <input type="radio" name="args" value="d">Right
+    <input type="radio" name="args" value="D">Hard Right
+    <br>
+    <input type="radio" name="args" value="r">reverse
+    <br>
+    <br>
+    <input type="radio" name="args" value="s">Stop motor
+    <br>
+    <input type="submit" value="Do it!">
+  </form>
+  </center>
   </body>
 </html>
